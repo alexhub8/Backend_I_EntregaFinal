@@ -1,8 +1,31 @@
+{{!-- Vista principal que muestra la lista de productos con paginación --}}
 <h1>Listado de Productos</h1>
 <ul>
   {{#each products}}
+    {{!-- Iterar sobre cada producto --}}
     <li>
-      <strong>{{this.title}}</strong> — Precio: {{this.price}} — ID: {{this.id}}
+      <strong><a href="/products/{{this._id}}">{{this.title}}</a></strong> — Precio: {{this.price}} — Categoría: {{this.category}}
+      <button onclick="addToCart('{{this._id}}')">Agregar al carrito</button>
     </li>
   {{/each}}
 </ul>
+
+{{!-- Mostrar controles de paginación si existen --}}
+{{#if pagination}}
+<div>
+  {{#if pagination.hasPrevPage}}
+    <a href="{{pagination.prevLink}}">Anterior</a>
+  {{/if}}
+  Página {{pagination.page}} de {{pagination.totalPages}}
+  {{#if pagination.hasNextPage}}
+    <a href="{{pagination.nextLink}}">Siguiente</a>
+  {{/if}}
+</div>
+{{/if}}
+
+<script>
+function addToCart(productId) {
+  // Función para agregar producto al carrito (implementación básica)
+  alert('Producto ' + productId + ' agregado al carrito');
+}
+</script>

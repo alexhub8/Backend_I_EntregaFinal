@@ -1,0 +1,10 @@
+{{!-- Vista que muestra el contenido de un carrito específico --}}
+<h1>Carrito</h1>
+<ul>
+  {{#each cart.products}}
+    {{!-- Iterar sobre los productos del carrito --}}
+    <li>
+      <strong>{{this.product.title}}</strong> — Cantidad: {{this.quantity}} — Precio: {{this.product.price}}
+    </li>
+  {{/each}}
+</ul>

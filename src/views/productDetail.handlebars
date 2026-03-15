@@ -1,0 +1,18 @@
+{{!-- Vista de detalle de un producto específico --}}
+<h1>Detalle del Producto</h1>
+<div>
+  <h2>{{product.title}}</h2>
+  <p><strong>Descripción:</strong> {{product.description}}</p>
+  <p><strong>Precio:</strong> {{product.price}}</p>
+  <p><strong>Categoría:</strong> {{product.category}}</p>
+  <p><strong>Stock:</strong> {{product.stock}}</p>
+  <p><strong>Código:</strong> {{product.code}}</p>
+  <button onclick="addToCart('{{product._id}}')">Agregar al carrito</button>
+</div>
+
+<script>
+function addToCart(productId) {
+  // Función para agregar producto al carrito desde la vista de detalle
+  alert('Producto ' + productId + ' agregado al carrito');
+}
+</script>
