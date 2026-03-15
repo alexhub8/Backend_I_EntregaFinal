@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Martillo",
+    "description": "Martillo de carpintero 16 oz",
+    "code": "HAMMER01",
+    "price": 15.99,
+    "status": true,
+    "stock": 50,
+    "category": "Herramientas",
+    "thumbnails": []
+  },
+  {
+    "id": "2",
+    "title": "Destornillador Phillips",
+    "description": "Destornillador Phillips #2",
+    "code": "SCREW01",
+    "price": 5.49,
+    "status": true,
+    "stock": 120,
+    "category": "Herramientas",
+    "thumbnails": []
+  },
+  {
+    "id": "3",
+    "title": "Taladro eléctrico",
+    "description": "Taladro inalámbrico 18V",
+    "code": "DRILL01",
+    "price": 89.99,
+    "status": true,
+    "stock": 25,
+    "category": "Herramientas eléctricas",
+    "thumbnails": []
+  }
+]
